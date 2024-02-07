@@ -6,7 +6,7 @@ class person {
     int hands;
     int feet;
     double height;
-    int brain{ 1 };
+    int brain{0};
 };
 
 void humans() {
@@ -14,7 +14,7 @@ void humans() {
   Holden.hands = 2;
   Holden.feet = 1;
   Holden.height = .1;
-  cout << "Hand(s): " << Holden.hands << " F(ee/oo)t: " << Holden.feet << " Height: " << Holden.height << " Brain(s): " << Holden.brain << '\n';
+  cout << "Hands: " << Holden.hands << " Feet: " << Holden.feet << " Height: " << Holden.height << " Brain: " << Holden.brain << '\n';
 };
 
 void helloWorld() {
