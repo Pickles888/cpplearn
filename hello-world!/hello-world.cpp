@@ -9,9 +9,14 @@ void humans() {
   std::cout << "Hands: " << Holden.hands << " Feet: " << Holden.feet << " Height: " << Holden.height << " Brain: " << Holden.brain << '\n';
 };
 
+int returnExpression() {
+  int x{6};
+    return x;
+}
 
 void helloWorld() {
   std::cout << "Hello World" << '\n';
+  std::cout << "Return Value: " << returnExpression() << '\n';
 };
 
 int main() {
