@@ -1,5 +1,5 @@
 build:
-	g++ hello-world.cc humans.h -o hello-world
+	g++ hello-world.cc -o hello-world
 push:
 	git add -A
 	git commit -m "commit by makefile"
