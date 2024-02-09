@@ -4,6 +4,7 @@
 using namespace std;
 
 void command() {
+  person Simulated;
   string cmd;
   getline(cin, cmd);
   while (Simulated.food > 0) {
