@@ -1,7 +1,7 @@
 #include <iostream>
+#include "include.h"
 
-void decleration();
-void include();   
+void decleration();   
 
 int param(int x) {
   x--;
