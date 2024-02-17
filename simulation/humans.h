@@ -3,10 +3,10 @@
 
 class person {
   public:
-    int money{10};
-    int food{2};
-    int energy{5};
-    int meletonin{5};
+    int money;
+    int food;
+    int energy;
+    int meletonin;
 
     /* ~Actions~ */
     void buyFood() {

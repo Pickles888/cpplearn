@@ -3,18 +3,27 @@
 #include "humans.h"
 using namespace std;
 
+void simPerson(person& Simulated) {
+  Simulated.money = 5;
+  Simulated.food = 2;
+  Simulated.energy = 5;
+  Simulated.meletonin = 5;
+}
+
 void command() {
-  person Simulated;
+  simPerson(Simulated);
   string cmd;
   getline(cin, cmd);
-  while (Simulated.food > 0) {
-    if (cmd == "do work") {
-      cout << "it worked :)";
-    }
+  if (cmd == "do work") {
+      cout << Simulated.food;
   }
 }
 
 int main() {
-  person Simulated;
-  command();
+  while (Simulated.food > 0) {
+    Simulated.food--;
+    command();
+  }
+    return 0;
 }
+
