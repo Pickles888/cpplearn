@@ -12,19 +12,14 @@ public:
 
     void getMass() {
       // gets the radius
-      std::cout << "\nEnter Ball Radius\n" << ": ";
+      std::cout << "\nEnter Ball Radius\n" << "(m): ";
       std::cin >> radius;
-      double rpi { radius * 3.14 };
-      double rpicubed { pow(rpi, 3) };
-      std::cout << "RPICUBED: " << rpicubed << std::endl;
-      double volume { 1.3 * rpicubed };
-      std::cout << "VOLUME: " << volume;
+      double volume { (4/3) * pow(radius * 3.14, 3) };
       // gets the density
       std::cout << "\nEnter Ball Density\n" << ": ";
       std::cin >> density;
       // uses the density and volume to get the mass
-      double mass { density * volume };
-      std::cout << mass;
+      mass = density * volume;
     }
 
 };
